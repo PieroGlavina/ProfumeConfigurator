@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+
+@font-face {
+    font-family: 'VantaCustom';
+    src: url('public/fonts/caltoriaLuxury.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* 2. Register it in the Tailwind v4 Theme */
+@theme {
+    --font-vanta: "VantaCustom", sans-serif;
+}
+
+
+@utility text-outline {
+    color: transparent;
+    -webkit-text-stroke: 1px white;
+    /* text-stroke is the standard, though webkit is currently more compatible */
+    text-stroke: 1px white;
+}
+
+/* Optional: Create a thicker version too */
+@utility text-outline-thick {
+    color: transparent;
+    -webkit-text-stroke: 2px white;
+    text-stroke: 2px white;
+}
